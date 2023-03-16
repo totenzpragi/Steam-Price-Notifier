@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "Steam Price Notifier",
+    "version": "1.0.0",
+    "description": "It monitors the prices of items on the Steam Marketplace and notifies you when they fall below a certain value.",
+    "permissions": [
+      "storage",
+      "alarms",
+      "tabs",
+      "notifications",
+      "activeTab",
+      "https://steamcommunity.com/"
+    ],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": "icon.png"
+    },
+    "background": {
+      "service_worker": "background.js"
+    },
+    "icons": {
+      "48": "icon.png"
+    }
+  }
+  

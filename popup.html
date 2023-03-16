@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Steam Price Monitor</title>
+    <style>
+      /* Add your own CSS styles to improve the user interface appearance */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 16px;
+      }
+
+      input {
+        display: block;
+        margin-bottom: 8px;
+      }
+
+      button {
+        margin-top: 8px;
+        margin-bottom: 16px;
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      li {
+        margin-bottom: 8px;
+      }
+
+      #itemsList {
+        margin-top: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Steam Price Monitor</h1>
+    <h2>Add an item to monitor:</h2>
+    <input type="text" id="itemUrl" placeholder="Item link" />
+    <input type="number" id="targetPrice" placeholder="Target price" step="0.01" />
+    <button id="addBtn">Add item to monitor</button>
+
+    <h2>Watched items:</h2>
+    <ul id="itemsList"></ul>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
